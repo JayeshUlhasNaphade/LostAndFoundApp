@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:elevation="4dp"
+    app:cardBackgroundColor="#ECC9C9"
+    app:cardUseCompatPadding="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/showdata_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/recycle"
+            />
+
+        <ImageView
+            android:id="@+id/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/showdata_img"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/showdata_thing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/showdata_img"
+            android:layout_marginLeft="50dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/showdata_img"
+            android:layout_below="@+id/showdata_thing"
+            android:src="@drawable/location"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/showdata_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/loc"
+            android:layout_below="@+id/showdata_thing"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/showdata_img"
+            android:layout_below="@+id/showdata_location"
+            android:src="@drawable/description"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:id="@+id/showdata_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/desc"
+            android:layout_below="@+id/showdata_location"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_delete_24"
+            android:layout_alignParentEnd="true"
+            />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_time"
+            android:layout_below="@id/showdata_description"
+            android:layout_toLeftOf="@+id/time2"/>
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="text"
+            android:layout_marginLeft="5dp"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/showdata_description"
+            android:layout_marginTop="5dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

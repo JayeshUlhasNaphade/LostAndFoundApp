@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="100dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.profile.ProfileFragment">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/showProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        tools:ignore="RedundantNamespace"
+        android:layout_marginBottom="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:textAlignment="viewStart"/>
+
+            <TextView
+                android:id="@+id/name_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginLeft="30dp"
+                android:padding="10dp"
+                android:textAlignment="viewStart"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Mobile No."
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:textAlignment="viewStart"/>
+
+        <TextView
+            android:id="@+id/mobile_sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile no."
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:textAlignment="viewStart"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Roll No."
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:textAlignment="viewStart"/>
+
+        <TextView
+            android:id="@+id/rollno_sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Roll no"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:textAlignment="viewStart"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp">
+
+    <Button
+        android:id="@+id/editprofile"
+        android:layout_width="150dp"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="79dp"
+        android:onClick="profile"
+        android:text="Edit Profile"
+        tools:ignore="MissingConstraints,OnClick" />
+    </RelativeLayout>
+
+</LinearLayout>
+

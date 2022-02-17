@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Add_Items">
+
+
+    <ImageView
+        android:id="@+id/Add_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_image"
+        android:onClick="addImage"
+        android:layout_marginBottom="20dp"
+        tools:ignore="OnClick" />
+
+    <EditText
+        android:id="@+id/thing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="what do you found?"
+        android:layout_below="@+id/Add_image"
+        android:textColorHint="#4E4E4E"
+        android:textColor="@color/black"
+        android:inputType="textNoSuggestions"
+
+        android:backgroundTint="#DA6F96"
+        android:layout_margin="10sp"
+        />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="location"
+        android:inputType="textNoSuggestions"
+        android:layout_below="@+id/thing"
+        android:layout_margin="10sp"
+        android:textColor="@color/black"
+        android:textColorHint="#4E4E4E"
+        android:backgroundTint="#DA6F96"
+        />
+
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:inputType="textNoSuggestions"
+        android:layout_below="@+id/location"
+        android:layout_margin="10sp"
+        android:textColor="@color/black"
+        android:textColorHint="#4E4E4E"
+        android:backgroundTint="#DA6F96"
+        />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Add_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="327dp"
+        android:layout_marginEnd="162dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="add" />
+
+
+</RelativeLayout>
